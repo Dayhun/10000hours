@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+body {
+    background-color: #5B2386;
+}
+
+#main {
+    font-family: "GmarketSansMedium";
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.btn {
+    font-family: "GmarketSansBold";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #5B2386;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    border: none;
+}
+
+.title {
+    margin-top: 140px;
+    background-image: url('../img/clock.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 225px;
+}
+
+.title .title-img {
+    width: 564px;
+    height: 112px;
+    padding-top: 54px;
+}
+
+.contents .cont-title {
+    font-family: "OTEnjoystoriesBA";
+    color: #f5df4d;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 66px 0 78px;
+}
+
+.contents .cont-detail {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    background-image: url('../img/quotes.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contents .cont-detail strong {
+    font-family: "GmarketSansBold";
+
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.contents .user-input {
+    display: inline-block;
+    margin-top: 102px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    background-image: url('../img/click.png');
+    background-size: 64px 72px;
+    background-repeat: no-repeat;
+    background-position: 672px 270px;
+
+}
+
+.contents .user-input input {
+    width: 228px;
+    height: 57px;
+    margin: 0 17px 27px;
+    background: #FFFFFF;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-family: "GmarketSansMedium";
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+}
+
+.contents .user-input .input-txt::placeholder {
+    color: #BABCBE;
+}
+
+.contents .user-input .btn-user {
+    display: block;
+    width: 565px;
+    height: 66px;
+    background: #FCEE21;
+    margin: 88px auto 147px;
+}
+
+.contents .loading-img {
+    display: none;
+}
+
+.contents .result {
+    display: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.contents .result strong {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+    margin: 17px 12px;
+}
+
+.contents .result .btn-wrap {
+    display: flex;
+    justify-content: center;
+    width: 565px;
+    margin: 127px auto 130px;
+}
+
+.contents .result .btn-wrap .btn-go {
+    width: 356px;
+    height: 66px;
+    background: #FCEE21;
+    margin-right: 18px;
+}
+
+.contents .result .btn-wrap .btn-share {
+    width: 191px;
+    height: 66px;
+    background: #FFFFFF;
+}
+
+.footer {
+    padding: 45px 0 50px;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.footer .copyright {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+}
