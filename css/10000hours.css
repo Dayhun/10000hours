@@ -28,6 +28,17 @@
         url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
+@keyframes rotate {
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 body {
     background-color: #5B2386;
 }
@@ -125,12 +136,22 @@ body {
     height: 66px;
     background: #FCEE21;
     margin: 88px auto 147px;
+    cursor: pointer;
 }
 
-.contents .loading-img {
+/* 결과 시계 이미지 */
+.contents .result-loading {
     display: none;
+    justify-content: center;
+    margin-bottom: 80px;
 }
 
+.contents .result-loading img {
+    width: 100px;
+    animation: rotate 1.1s infinite linear;
+}
+
+/* 결과 */
 .contents .result {
     display: none;
     font-weight: 400;
@@ -138,8 +159,9 @@ body {
     line-height: 24px;
 }
 
-.contents .result strong {
-    display: inline-block;
+.contents .result span {
+    padding: 0 20px;
+    font-family: 'GmarketSansBold';
     font-weight: 700;
     font-size: 72px;
     line-height: 72px;
@@ -164,6 +186,62 @@ body {
     width: 191px;
     height: 66px;
     background: #FFFFFF;
+}
+
+/* modal */
+.contents .modal {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.contents .modal .modal-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+.contents .modal .cheer {
+    font-family: 'OTEnjoystoriesBA';
+    color: #5B2386;
+    text-align: center;
+}
+
+.contents .modal .cheer h1 {
+    font-size: 80px;
+}
+
+.contents .modal .cheer h3 {
+    font-size: 30px;
+}
+
+.contents .modal .licat_img {
+    margin-bottom: 20px;
+}
+
+.contents .modal .close-btn {
+    box-shadow: 0px 6px 16px 0px rgb(0 0 0 / 15%), 0px 5px 16px 0px rgb(0 0 0 / 15%);
+    margin: 20px 0 20px;
+    width: 565px;
+    height: 66px;
+    background: #FCEE21;
+}
+
+.contents .modal .btn-modal p {
+    color: #747474;
+    font-size: 13px;
+    text-align: center;
 }
 
 .footer {
