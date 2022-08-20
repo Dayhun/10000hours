@@ -37,7 +37,8 @@ submit이 되면 새로고침이 되기 때문에, 결과화면이 뜨자마자 
 
 #### ✅ 해결
 - 방법 1
-form 안에 있어도 submit 기능을 하지 않게 하기 위해 button 태그에 `type="button"`을 추가하면 된다.
+
+    form 안에 있어도 submit 기능을 하지 않게 하기 위해 button 태그에 `type="button"`을 추가하면 된다.
 
 ```html
 <!-- 수정한 코드 -->
@@ -45,7 +46,8 @@ form 안에 있어도 submit 기능을 하지 않게 하기 위해 button 태그
 ```
 
 - 방법 2
-해당 EventListener에 preventDefault를 추가하여, 해당 이벤트에 대한 동작을 막을 수 있다.
+
+    해당 EventListener에 preventDefault를 추가하여, 해당 이벤트에 대한 동작을 막을 수 있다.
 
 ```js
 function calculator(event) {
